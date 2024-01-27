@@ -123,8 +123,10 @@ def update_map(location, usuario, color_map):
 
     px.set_mapbox_access_token(open("keys/mapbox_key").read())
 
+   
+
     map_fig = px.scatter_mapbox(df_intermediate, lat="lat", lon="long", color=color_map,
-                                size="idade", size_max=15, zoom=14, opacity=0.9, color_continuous_scale='darkmint', hover_data={"nome": True,"descricao": True, "lat":False,
+                                size="idade", size_max=15, zoom=14, opacity=0.4, color_continuous_scale='darkmint', hover_data={"nome": True,"descricao": True, "descricao1": True,"lat":False,"descricao2": True,
                                                                                                                                 "long":False, "idade": True, "sexo": True, "cpf": True, "bairro": True})
   
 
