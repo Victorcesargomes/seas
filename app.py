@@ -55,6 +55,7 @@ lista_usuario = {
 controlers = dbc.Row([
     html.Img(id="logo", src=app.get_asset_url("logo.png"), style={"width": "80%"}),
     html.H1("Serviço Especializado em Abordagem Social - SEAS", style={"margin-top": "30px", "textAlign": "center"}),
+    html.H3("Versão Beta", style={"margin-top": "30px", "textAlign": "center"}),
 
 
     html.H2("Bairro", style={"margin-top": "50px"}),
@@ -125,6 +126,8 @@ def update_map(location, usuario, color_map):
     map_fig = px.scatter_mapbox(df_intermediate, lat="lat", lon="long", color=color_map,
                                 size="idade", size_max=15, zoom=14, opacity=0.9, color_continuous_scale='darkmint', hover_data={"nome": True,"descricao": True, "lat":False,
                                                                                                                                 "long":False, "idade": True, "sexo": True, "cpf": True, "bairro": True})
+  
+
     
     map_fig.update_layout(mapbox=dict(center=go.layout.mapbox.Center(lat=lat_media, lon=long_media)),
                           template="plotly_dark", paper_bgcolor="rgba(0, 0, 0, 0)",
