@@ -37,7 +37,8 @@ lista_bairro = {
     "SAO JOSE": 1,
     "BOA VISTA": 2,
     "SANTO AMARO":3,
-    "SANTO ANTONIO": 4
+    "SANTO ANTONIO": 4,
+    "RECIFE ANTIGO": 5
 }
 
 
@@ -51,7 +52,8 @@ lista_usuario = {
     "A5": 5,
     "A6": 6,
     "A7": 7,
-    "A8": 8
+    "A8": 8,
+    "A9": 9
 }
 
 # ==== CONTROLADORES DIVERSOS ==== #
