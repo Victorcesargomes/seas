@@ -54,7 +54,10 @@ lista_usuario = {
     "A7": 7,
     "A8": 8,
     "A9": 9,
-    "A10": 10
+    "A10": 10,
+    "A11": 11,
+    "A12":12,
+    "A13":13
 }
 
 # ==== CONTROLADORES DIVERSOS ==== #
